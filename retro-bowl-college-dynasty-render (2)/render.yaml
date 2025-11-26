@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: retro-bowl-college-dynasty
+    env: static
+    staticPublishPath: /
+    buildCommand: ""
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /
